@@ -37,7 +37,7 @@ public class SelectMenu extends JFrame implements MouseListener {
 		image.setImage(image.getImage().getScaledInstance(290, 420, Image.SCALE_DEFAULT));
 		JLabel la = new JLabel(image);
 		la.setBounds(0, 0, this.getWidth(), this.getHeight());// 添加图片，设置图片大小为窗口的大小。
-		this.getLayeredPane().add(la, new Integer(Integer.MAX_VALUE)); // 将JLabel加入到面板容器的最上层
+		this.getLayeredPane().add(la, Integer.valueOf(Integer.MAX_VALUE)); // 将JLabel加入到面板容器的最上层
 	}
 
 	/**

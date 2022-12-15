@@ -45,18 +45,6 @@ public class Computer {
         // 选择初级人机
         else if (level == ChooseLevel.MEDIUM) {
             // 加载初级人机函数
-            countMaxLines_primary(chess, Chess.WHITE);
-            return coord;
-
-        }
-        // 选择中级人机
-        else if (level == ChooseLevel.SENIOR) {
-            // 加载中级人机函数
-            countMaxLines_medium(chess, Chess.WHITE);
-        }
-        // 选择初级人机
-        else if (level == ChooseLevel.MEDIUM) {
-            // 加载初级人机函数
             countMaxLines_medium(chess, Chess.WHITE);
             return coord;
 
