@@ -49,11 +49,6 @@ public class ChessBoard extends JPanel implements MouseMotionListener, MouseList
     ChessBoard() {
         // 加载棋盘、黑棋、白棋、位置图片
         chessBoardImage = Toolkit.getDefaultToolkit().getImage("images/chessB.jpg");
-        // System.out.println("chessBoardImageHeight:____" +
-        // chessBoardImage.getHeight(null));
-        // System.out.println("chessBoardImageWidth:____" +
-        // chessBoardImage.getWidth(null));
-
         whiteChess = Toolkit.getDefaultToolkit().getImage("images/white.png");
         blackChess = Toolkit.getDefaultToolkit().getImage("images/black.png");
         position = Toolkit.getDefaultToolkit().getImage("images/position.gif");
@@ -104,7 +99,6 @@ public class ChessBoard extends JPanel implements MouseMotionListener, MouseList
                 }
             }
         }
-        // System.out.println("Debug paintComponent");
     }
 
     /**

@@ -209,7 +209,7 @@ public class PPMainBoard extends MainBoard {
             public void run() {
                 try {
                     byte buf[] = new byte[1024];
-                    socket = new DatagramSocket(10086);
+                    socket = new DatagramSocket(10001);
                     DatagramPacket dp = new DatagramPacket(buf, buf.length);
                     while (true) {
                         socket.receive(dp);

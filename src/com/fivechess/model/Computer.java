@@ -4,8 +4,8 @@ package com.fivechess.model;
  * 电脑水平算法
  * 棋盘为15*15
  * 初级：随机下
- * 初级人机：根据棋子点的分数来判断威胁最大的坐标完成下棋，计分时不考虑是否两边有连子，中间有空格的情况
- * 中级人机：根据棋子点的分数来判断威胁最大的坐标完成下棋,在计分的时候会考虑两边有连子，中间有空格的情况
+ * 中级人机：根据棋子点的分数来判断威胁最大的坐标完成下棋，计分时不考虑是否两边有连子，中间有空格的情况
+ * 高级人机：根据棋子点的分数来判断威胁最大的坐标完成下棋,在计分的时候会考虑两边有连子，中间有空格的情况
  * @author admin
  */
 
@@ -42,16 +42,16 @@ public class Computer {
                 }
             }
         }
-        // 选择初级人机
+        // 选择中级人机
         else if (level == ChooseLevel.MEDIUM) {
-            // 加载初级人机函数
+            // 加载中级人机函数
             countMaxLines_medium(chess, Chess.WHITE);
             return coord;
 
         }
-        // 选择中级人机
+        // 选择高级人机
         else if (level == ChooseLevel.SENIOR) {
-            // 加载中级人机函数
+            // 加载高级人机函数
             countMaxLines_medium(chess, Chess.WHITE);
             return coord;
         }
